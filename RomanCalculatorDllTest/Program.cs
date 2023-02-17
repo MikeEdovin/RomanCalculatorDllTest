@@ -8,19 +8,19 @@ using Unity;
 internal class Program
 {
     private static void Main(string[] args)
-    {
+    {/*
         var container = new UnityContainer();
         container.RegisterType<IRomanArabicConverter, RomanArabicConverter>();
         container.RegisterType<IInfixToPostfix, InfixToPostfix>();
         container.RegisterType<IPostfixToResult, PostfixToResult>();
         container.RegisterType<ICalculator,RomanCalculator>();
         var calculator=container.Resolve<ICalculator>();
+        */
         
-        /*
         var services=ConfigureServices();
         var serviceProvider=services.BuildServiceProvider();
         var calculator=serviceProvider.GetRequiredService<ICalculator>();
-        */
+        
         IEnumerable<string> inputs = new List<string>() { "(MMMDCCXXIV - MMCCXXIX) * II", "(MMMMDCCXXIV - MMCCXXIX) * II", "MMM+MMM" };
         foreach (string input in inputs)
         {
